@@ -1,0 +1,31 @@
+{
+  "name": "unobas_site_v2",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages master -d build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-spring/parallax": "^9.4.5",
+    "bootstrap": "^5.2.0-beta1",
+    "gh-pages": "^4.0.0",
+    "mdb-react-ui-kit": "^3.0.0",
+    "mdb-ui-kit": "^4.0.0",
+    "plyr-react": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "reactstrap": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.7"
+  },
+  "homepage": "https://unobas.ch"
+}
