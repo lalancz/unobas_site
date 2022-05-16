@@ -1,4 +1,4 @@
-import {Parallax, ParallaxLayer} from '@react-spring/parallax';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { useRef, useEffect } from 'react';
 import { render } from 'react-dom';
 import Plyr from 'plyr-react'
