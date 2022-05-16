@@ -1,6 +1,6 @@
 {
-  "name": "unobas_site_v2",
-  "private": true,
+  "name": "unobas_site",
+  "private": false,
   "version": "0.0.0",
   "scripts": {
     "predeploy": "npm run build",
@@ -27,5 +27,5 @@
     "@vitejs/plugin-react": "^1.3.0",
     "vite": "^2.9.7"
   },
-  "homepage": "https://lalancz.github.io/unobas_site/"
+  "homepage": "https://lalancz.github.io/unobas_site"
 }
