@@ -106,7 +106,7 @@ function App() {
             offset={0.99999999999999999}
             speed={1.2}
             factor={1}
-            style={{'marginTop': '-550px'}}>
+            style={{'marginTop': '-400px'}}>
             <div style={{'marginTop': '200px', 'background': 'linear-gradient(0deg, #36676e 30%, #B0E0E6 100%)'}}>
               <h3 style={{'textAlign': 'center', 'fontSize': '200%', 'fontWeight': 'bold'}}>Features exclusive cards</h3>
               <div style={textcarddivstyle}>
