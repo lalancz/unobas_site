@@ -44,7 +44,7 @@ function App() {
   
     return (
       <div style={{'fontFamily': 'Segoe UI'}}>
-        <Parallax pages={1.9} ref={ref} style={{ top: '0', left: '0' }}>
+        <Parallax pages={2.7} ref={ref} style={{ top: '0', left: '0' }}>
           <ParallaxLayer
             offset={0.01}
             speed={0.1}
@@ -140,10 +140,36 @@ function App() {
               </div>
             </div>
             <div style={{'background': '#36676e', 'paddingTop': '100px'}}>
-              <button style={{'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'width': '28vw', 'minWidth': '350px', 'inlineSize': 'min-content'}} className='button-19' onClick={() => window.location.href = "https://git.scicore.unibas.ch/cs108-fs22/Gruppe-1"}>
-                <h4 style={{'textAlign': 'center', 'fontSize': 'max(150%, 10px)'}}>Click here to download</h4>
+              <button style={{'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'width': '30vw', 'minWidth': '350px', 'inlineSize': 'min-content'}} className='button-19' onClick={() => window.location.href = "https://git.scicore.unibas.ch/cs108-fs22/Gruppe-1"}>
               </button>
             </div>
+            <div style={{'backgroundColor': '#36676e', 'paddingTop': '50px', 'verticalAlign': 'center', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto'}}>
+            <p style={{'fontSize': 'max(3vw, 40px)', 'fontWeight': 'bold', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50%', 'minWidth': '360px'}}>About us</p>
+            <div style={{'paddingTop': '50px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '80vw', 'display': 'flex', 'verticalAlign': 'center'}}>
+              <img src="/unobas_site/static/avatar.png" style={{'borderRadius': '50%', 'border': 'solid', 'height': '12vw', 'minHeight': '140px', 'borderWidth': '2px'}} /> 
+              <div style={{'width': '35vw', 'paddingLeft': '35px'}}>
+                <p style={{'fontSize': 'max(2vw, 25px)', 'fontWeight': 'bold', 'top': '-25px', 'position': 'relative'}}>Dario Llarden</p><br></br>
+                <p style={{'fontSize': 'max(1.2vw, 17px)', 'top': '-100px', 'position': 'relative', 'paddingTop': '25px'}}>Commits both mentally and onto the master branch, day and night, very diligent when it comes to docs</p>
+                <p style={{'top': '-65px', 'position': 'relative'}}>GitHub: <a href="https://github.com/Togira123">https://github.com/Togira123</a></p>
+              </div>
+            </div>
+            <div style={{'paddingTop': '50px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '80vw', 'display': 'flex', 'verticalAlign': 'center'}}>
+              <img src="/unobas_site/static/avatar3.png" style={{'borderRadius': '50%', 'border': 'solid', 'height': '12vw', 'minHeight': '140px', 'borderWidth': '2px'}} /> 
+              <div style={{'width': '35vw', 'paddingLeft': '35px'}}>
+                <p style={{'fontSize': 'max(2vw, 25px)', 'fontWeight': 'bold', 'top': '-25px', 'position': 'relative'}}>Pascal Wohlewender</p><br></br>
+                <p style={{'fontSize': 'max(1.2vw, 17px)', 'top': '-100px', 'position': 'relative', 'paddingTop': '25px'}}>The most experienced of the three with a couple of projects already behind him across many languages</p><br></br>
+                <p style={{'top': '-100px', 'position': 'relative'}}>Personal site: <a href="https://wohlwender.ch/">https://wohlwender.ch/</a></p>
+              </div>
+            </div>
+            <div style={{'paddingTop': '50px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '80vw', 'display': 'flex'}}>
+              <img src="/unobas_site/static/avatar2.png" style={{'borderRadius': '50%', 'border': 'solid', 'height': '12vw', 'minHeight': '140px', 'borderWidth': '2px'}} /> 
+              <div style={{'width': '35vw', 'paddingLeft': '35px'}}>
+                <p style={{'fontSize': 'max(2vw, 25px)', 'fontWeight': 'bold', 'top': '-25px', 'position': 'relative'}}>Petr Sabovčik</p><br></br>
+                <p style={{'fontSize': 'max(1.2vw, 17px)', 'top': '-100px', 'position': 'relative', 'paddingTop': '25px'}}>A somewhat taciturn coder who likes Python a lot, is known to get peeved by Java from time to time and made this site with a decent amount of headaches</p>
+                <p style={{'top': '-100px', 'position': 'relative'}}>GitHub: <a href="https://github.com/lalancz/">https://github.com/lalancz/</a></p>
+              </div>
+            </div>
+          </div>
             <div style={{'height': '5000px', 'background': '#36676e', 'display': 'flex', 'flexDirection': 'column', 'flexGrow': '1'}}></div>
           </ParallaxLayer>
         </Parallax>
