@@ -4,7 +4,8 @@ import { render } from 'react-dom';
 import Plyr from 'plyr-react'
 import 'plyr-react/dist/plyr.css'
 
-function App() {
+class App extends React.Component {
+  render() {
   const carddivstyle = {
     'width' : '100vw',
     'marginLeft': 'auto',
@@ -149,6 +150,7 @@ function App() {
       </Parallax>
     </div>
   );
+  }
 }
 
 export default App;
