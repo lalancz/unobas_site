@@ -56,28 +56,28 @@ function App() {
             offset={0.25}
             speed={1}>
             <div style={carddivstyle}>
-              <img src='/cards/plus_four.png' style={cardstyle}></img><img src='/cards/green_nine.png' style={cardstyle}></img>
+              <img src='/unobas_site/cards/plus_four.png' style={cardstyle}></img><img src='/unobas_site/cards/green_nine.png' style={cardstyle}></img>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
             offset={0.35}
             speed={1.15}>
             <div style={carddivstyle}>
-              <img src='/cards/red_reverse.png' style={cardstyle}></img><img src='/cards/green_two.png' style={cardstyle}></img>
+              <img src='/unobas_site/cards/red_reverse.png' style={cardstyle}></img><img src='/unobas_site/cards/green_two.png' style={cardstyle}></img>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
             offset={0.45}
             speed={1.25}>
             <div style={carddivstyle}>
-              <img src='/cards/yellow_plus_two.png' style={cardstyle}></img><img src='/cards/choose_color.png' style={cardstyle}></img>
+              <img src='/unobas_site/cards/yellow_plus_two.png' style={cardstyle}></img><img src='/unobas_site/cards/choose_color.png' style={cardstyle}></img>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
             offset={0.55}
             speed={1.35}>
             <div style={carddivstyle}>
-              <img src='/cards/blue_four.png' style={cardstyle}></img><img src='/cards/red_eight.png' style={cardstyle}></img>
+              <img src='/unobas_site/cards/blue_four.png' style={cardstyle}></img><img src='/unobas_site/cards/red_eight.png' style={cardstyle}></img>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
@@ -99,7 +99,7 @@ function App() {
             offset={0.90}
             speed={1}>
             <div style={{'width': '50%', 'minWidth': '380px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'marginTop': '15px', 'marginBottom': '200px'}}>
-              <Plyr src='/static/mock_trailer.mp4' width="350"></Plyr>
+              <Plyr src='/unobas_site/static/mock_trailer.mp4' width="350"></Plyr>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
@@ -111,13 +111,13 @@ function App() {
               <h3 style={{'textAlign': 'center', 'fontSize': '200%', 'fontWeight': 'bold'}}>Features exclusive cards</h3>
               <div style={textcarddivstyle}>
                 <div style={{'display': 'inline-grid'}}>
-                  <img src='/cards/blue_x_ray.png' className='textcardstyle'></img>
+                  <img src='/unobas_site/cards/blue_x_ray.png' className='textcardstyle'></img>
                   <div className='carddescription'>
                     <p style={{'fontSize': 'max(2vw, 18px)', 'fontWeight': 'bold'}}>The X-Ray Card</p><br></br>
                   </div>
                 </div>
                 <div style={{'display': 'inline-grid'}}>
-                  <img src='/cards/red_plus_two_all.png' className='textcardstyle'></img>
+                  <img src='/unobas_site/cards/red_plus_two_all.png' className='textcardstyle'></img>
                   <div className='carddescription'>
                     <p style={{'fontSize': 'max(2vw, 18px)', 'fontWeight': 'bold'}}>The Powerful +2 Card</p><br></br>
                   </div>
