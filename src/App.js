@@ -137,7 +137,7 @@ function App() {
               <div style={textcarddivstyletwo}>
                 <div style={{'display': 'flex'}}>
                   <div className='carddescription'>
-                    <p style={{'fontSize': 'max(1.5vw, 15px)'}}>Allows to see your<br></br> opponents' cards</p>
+                    <p style={{'fontSize': 'max(1.5vw, 15px)'}}>Allows you to see your<br></br> opponents' cards</p>
                   </div>
                 </div>
                 <div style={{'display': 'flex'}}>
