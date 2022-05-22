@@ -3,6 +3,7 @@ import { useRef, useEffect, Component } from 'react';
 import { render } from 'react-dom';
 import Plyr from 'plyr-react'
 import 'plyr-react/dist/plyr.css'
+import { saveAs } from 'file-saver'
 
 function App() {
     const carddivstyle = {
@@ -39,12 +40,19 @@ function App() {
       'display' : 'flex',
       'justifyContent' : 'center'
     };
+
+    const saveJar = () => {
+      saveAs(
+        "https://lalancz.github.io/unobas_site/static/unobas-1.0.0.jar",
+        "unobas-1.0.0.jar"
+      );
+    };
   
     const ref = useRef();
   
     return (
       <div style={{'fontFamily': 'Segoe UI'}}>
-        <Parallax pages={2.7} ref={ref} style={{ top: '0', left: '0' }}>
+        <Parallax pages={2.85} ref={ref} style={{ top: '0', left: '0' }}>
           <ParallaxLayer
             offset={0.01}
             speed={0.1}
@@ -108,7 +116,7 @@ function App() {
             factor={1}
             style={{'marginTop': '-400px'}}>
             <div style={{'marginTop': '200px', 'background': 'linear-gradient(0deg, #36676e 30%, #B0E0E6 100%)'}}>
-              <h3 style={{'textAlign': 'center', 'fontSize': '200%', 'fontWeight': 'bold'}}>Features exclusive cards</h3>
+              <h3 style={{'textAlign': 'center', 'fontSize': 'max(3vw, 30px)', 'fontWeight': 'bold'}}>Features exclusive cards</h3>
               <div style={textcarddivstyle}>
                 <div style={{'display': 'inline-grid'}}>
                   <img src='/unobas_site/cards/blue_x_ray.png' className='textcardstyle'></img>
@@ -140,7 +148,7 @@ function App() {
               </div>
             </div>
             <div style={{'background': '#36676e', 'paddingTop': '100px'}}>
-              <button style={{'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'width': '30vw', 'minWidth': '350px', 'inlineSize': 'min-content'}} className='button-19' onClick={() => window.location.href = "https://git.scicore.unibas.ch/cs108-fs22/Gruppe-1"}>
+              <button style={{'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'width': '30vw', 'minWidth': '350px', 'inlineSize': 'min-content'}} className='button-19' onClick={() => saveJar()}>
               </button>
             </div>
             <div style={{'backgroundColor': '#36676e', 'paddingTop': '50px', 'verticalAlign': 'center', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto'}}>
@@ -170,7 +178,16 @@ function App() {
               </div>
             </div>
           </div>
-            <div style={{'height': '5000px', 'background': '#36676e', 'display': 'flex', 'flexDirection': 'column', 'flexGrow': '1'}}></div>
+          <div style={{'height': '5000px', 'background': 'rgba(38, 74, 79)', 'display': 'flex', 'flexDirection': 'column', 'flexGrow': '1', 'borderTop': 'solid', 'display': 'inline-flex', 'width': '100vw'}}>
+            <div style={{'top': '50px'}}>
+              <div style={{'float': 'left', 'paddingLeft': '15%'}}>
+                <img src='/unobas_site/static/+4group.png' style={{'width': '5vw', 'minWidth': '65px'}} />
+              </div>
+              <div style={{'position': 'absolute', 'right': '15%', 'paddingTop': '2%', 'fontWeight': 'bold', 'fontSize': 'max(1vw, 17px)'}}>
+                +4 Entertainment
+              </div>
+            </div>
+          </div>
           </ParallaxLayer>
         </Parallax>
       </div>
