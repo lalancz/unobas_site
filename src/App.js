@@ -179,14 +179,6 @@ function App() {
             </div>
           </div>
           <div style={{'height': '5000px', 'background': 'rgba(38, 74, 79)', 'display': 'flex', 'flexDirection': 'column', 'flexGrow': '1', 'borderTop': 'solid', 'display': 'inline-flex', 'width': '100vw'}}>
-            <div style={{'top': '50px'}}>
-              <div style={{'float': 'left', 'paddingLeft': '15%'}}>
-                <img src='/unobas_site/static/+4group.png' style={{'width': '5vw', 'minWidth': '65px'}} />
-              </div>
-              <div style={{'position': 'absolute', 'right': '15%', 'paddingTop': '2%', 'fontWeight': 'bold', 'fontSize': 'max(1vw, 17px)'}}>
-                +4 Entertainment
-              </div>
-            </div>
           </div>
           </ParallaxLayer>
         </Parallax>
