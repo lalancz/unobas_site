@@ -106,7 +106,7 @@ function App() {
         <ParallaxLayer
           offset={0.90}
           speed={1}>
-          <div style={{ 'width': '50%', 'minWidth': '380px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'marginTop': '15px', 'marginBottom': '200px' }}>
+          <div style={{ 'width': '50%', 'minWidth': '370px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'marginTop': '15px', 'marginBottom': '200px' }}>
             <Plyr src='/unobas_site/static/trailer.mp4' poster='/unobas_site/static/trailer_Moment.jpg' width="350"></Plyr>
           </div>
         </ParallaxLayer>
