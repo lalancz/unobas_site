@@ -56,9 +56,9 @@ function App() {
         <ParallaxLayer
           offset={0.01}
           speed={0.1}
-          onClick={() => ref.current.scrollTo(1.1)}>
+          onClick={() => ref.current.scrollTo(1.55)}>
           <p style={{ 'textAlign': 'center', 'fontWeight': 'bold', 'fontSize': 'max(1vw, 75%)' }}>Jump to download</p>
-          <hr></hr>
+          <hr style={{'color': 'black', 'backgroundColor': 'black', 'border': 'solid', 'borderWidth': '1px'}}></hr>
         </ParallaxLayer>
         <ParallaxLayer
           offset={0.25}
@@ -112,15 +112,18 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           offset={1.0}
-          speed={1}>
-            <div style={{'height': '30vw'}}>
-              <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': '30vw'}}>
+          speed={1.5}
+          factor={0.45}>
+            <div style={{'height': 'calc(30% + 12vw)'}}>
+              <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': 'calc(30% + 12vw)', 'width': '100vw', 'objectFit': 'fill'}}>
               </video>
-              <div style={{'positon': 'absolute', 'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'paddingTop': '40px', 'paddingBottom': '40px', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50vw', 'minWidth': '325px', 'height': '25vw'}}>
-                <p style={{'color': 'orange', 'display': 'inline'}}>683</p> commits in total<br></br>
-                <p style={{'color': '#00a2ff', 'display': 'inline'}}>93</p> 0-6am commits<br></br>
-                Averaging <p style={{'color': 'green', 'display': 'inline'}}>8.1</p> commits per day<br></br>
-                Over <p style={{'color': 'red', 'display': 'inline'}}>8000</p> lines of Java code
+              <div style={{'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50vw', 'minWidth': '325px', 'height': '100%'}}>
+                  <div style={{'marginTop': 'auto', 'marginBottom': 'auto'}}>
+                  <p style={{'color': 'orange', 'display': 'inline'}}>683</p> commits in total<br></br>
+                  <p style={{'color': '#00a2ff', 'display': 'inline'}}>93</p> 0-6am commits<br></br>
+                  Averaging <p style={{'color': 'green', 'display': 'inline'}}>8.1</p> commits per day<br></br>
+                  Over <p style={{'color': 'red', 'display': 'inline'}}>8000</p> lines of Java code
+                  </div>
               </div>
             </div>
         </ParallaxLayer>
@@ -161,7 +164,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div style={{ 'background': '#36676e', 'paddingTop': '100px' }}>
+          <div style={{ 'background': '#36676e', 'paddingTop': '100px', 'paddingBottom': '100px' }}>
             <button style={{ 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'display': 'block', 'width': '30vw', 'minWidth': '350px', 'inlineSize': 'min-content' }} className='button-19' onClick={() => saveJar()}>
             </button>
           </div>
