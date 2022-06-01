@@ -1,5 +1,5 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { useRef, useEffect, Component } from 'react';
+import { useRef } from 'react';
 import { render } from 'react-dom';
 import Plyr from 'plyr-react'
 import 'plyr-react/dist/plyr.css'
@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div style={{ 'fontFamily': 'Segoe UI' }}>
-      <Parallax pages={2.85} ref={ref} style={{ top: '0', left: '0' }}>
+      <Parallax pages={3.3} ref={ref} style={{ top: '0', left: '0' }}>
         <ParallaxLayer
           offset={0.01}
           speed={0.1}
@@ -111,10 +111,24 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={0.99999999999999999}
+          offset={1.0}
+          speed={1}>
+            <div style={{'height': '30vw'}}>
+              <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': '30vw'}}>
+              </video>
+              <div style={{'positon': 'absolute', 'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'paddingTop': '40px', 'paddingBottom': '40px', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50vw', 'minWidth': '325px', 'height': '25vw'}}>
+                <p style={{'color': 'orange', 'display': 'inline'}}>683</p> commits in total<br></br>
+                <p style={{'color': '#00a2ff', 'display': 'inline'}}>93</p> 0-6am commits<br></br>
+                Averaging <p style={{'color': 'green', 'display': 'inline'}}>8.1</p> commits per day<br></br>
+                Over <p style={{'color': 'red', 'display': 'inline'}}>8000</p> lines of Java code
+              </div>
+            </div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={1.9999}
           speed={1.2}
           factor={1}
-          style={{ 'marginTop': '-400px' }}>
+          style={{ 'marginTop': '-350px' }}>
           <div style={{ 'marginTop': '200px', 'background': 'linear-gradient(0deg, #36676e 30%, #B0E0E6 100%)' }}>
             <h3 style={{ 'textAlign': 'center', 'fontSize': 'max(3vw, 30px)', 'fontWeight': 'bold' }}>Features exclusive cards</h3>
             <div style={textcarddivstyle}>
@@ -178,7 +192,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div style={{ 'height': '5000px', 'background': 'rgba(38, 74, 79)', 'display': 'flex', 'flexDirection': 'column', 'flexGrow': '1', 'borderTop': 'solid', 'display': 'inline-flex', 'width': '100vw' }}>
+          <div style={{ 'height': '5000px', 'background': 'rgba(38, 74, 79)', 'flexDirection': 'column', 'flexGrow': '1', 'borderTop': 'solid', 'display': 'inline-flex', 'width': '100vw' }}>
           </div>
         </ParallaxLayer>
       </Parallax>
