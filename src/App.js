@@ -52,13 +52,13 @@ function App() {
 
   return (
     <div style={{ 'fontFamily': 'Segoe UI' }}>
-      <Parallax pages={3.4} ref={ref} style={{ top: '0', left: '0' }}>
+      <Parallax pages={3.5} ref={ref} style={{ top: '0', left: '0' }}>
         <ParallaxLayer
           offset={0.01}
           speed={0.1}
           onClick={() => ref.current.scrollTo(1.55)}>
           <p style={{ 'textAlign': 'center', 'fontWeight': 'bold', 'fontSize': 'max(1vw, 75%)' }}>Jump to download</p>
-          <hr style={{'color': 'black', 'backgroundColor': 'black', 'border': 'solid', 'borderWidth': '1px'}}></hr>
+          <hr style={{ 'color': 'black', 'backgroundColor': 'black', 'border': 'solid', 'borderWidth': '1px' }}></hr>
         </ParallaxLayer>
         <ParallaxLayer
           offset={0.25}
@@ -114,18 +114,18 @@ function App() {
           offset={1}
           speed={0.5}
           factor={0.45}>
-            <div style={{'height': 'calc(30% + 11vw)'}}>
-              <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': 'calc(30% + 11vw)', 'width': '100vw', 'objectFit': 'fill'}}>
-              </video>
-              <div style={{'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45vw', 'minWidth': '325px', 'height': '100%'}}>
-                  <div style={{'alignContent': 'center', 'justifyContent': 'center', 'flexDirection': 'column'}}>
-                    <p style={{'color': 'orange', 'display': 'inline'}}>683</p> commits in total<br></br>
-                    <p style={{'color': '#00a2ff', 'display': 'inline'}}>93</p> 0-6am commits<br></br>
-                    Averaging <p style={{'color': 'green', 'display': 'inline'}}>8.1</p> commits per day<br></br>
-                    Over <p style={{'color': 'red', 'display': 'inline'}}>8000</p> lines of Java code
-                  </div>
+          <div style={{ 'height': 'calc(30% + 11vw)' }}>
+            <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{ 'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': 'calc(30% + 11vw)', 'width': '100vw', 'objectFit': 'fill' }}>
+            </video>
+            <div style={{ 'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45vw', 'minWidth': '325px', 'height': '100%' }}>
+              <div style={{ 'alignContent': 'center', 'justifyContent': 'center', 'flexDirection': 'column' }}>
+                <p style={{ 'color': 'orange', 'display': 'inline' }}>683</p> commits in total<br></br>
+                <p style={{ 'color': '#00a2ff', 'display': 'inline' }}>93</p> 0-6am commits<br></br>
+                Averaging <p style={{ 'color': 'green', 'display': 'inline' }}>8.1</p> commits per day<br></br>
+                Over <p style={{ 'color': 'red', 'display': 'inline' }}>8000</p> lines of Java code
               </div>
             </div>
+          </div>
         </ParallaxLayer>
         <ParallaxLayer
           offset={1.9999}
@@ -182,8 +182,8 @@ function App() {
               <img src="/unobas_site/static/avatar3.png" style={{ 'borderRadius': '50%', 'border': 'solid', 'height': '12vw', 'minHeight': '140px', 'borderWidth': '2px' }} />
               <div style={{ 'width': '35vw', 'paddingLeft': '35px' }}>
                 <p style={{ 'fontSize': 'max(2vw, 25px)', 'fontWeight': 'bold', 'top': '-25px', 'position': 'relative' }}>Pascal Wohlewender</p><br></br>
-                <p style={{ 'fontSize': 'max(1.2vw, 17px)', 'top': '-100px', 'position': 'relative', 'paddingTop': '25px' }}>The most experienced of the three with a couple of projects already behind him across many languages</p><br></br>
-                <p style={{ 'top': '-100px', 'position': 'relative' }}>Personal site: <a href="https://wohlwender.ch/">https://wohlwender.ch/</a></p>
+                <p style={{ 'fontSize': 'max(1.2vw, 17px)', 'top': '-100px', 'position': 'relative', 'paddingTop': '25px' }}>The most experienced of the three with a couple of projects already behind him across a variety of languages</p><br></br>
+                <p style={{ 'top': '-100px', 'position': 'relative', 'lineBreak': 'anywhere' }}>Personal site: <a href="https://wohlwender.ch/">https://wohlwender.ch/</a></p>
               </div>
             </div>
             <div style={{ 'paddingTop': '50px', 'justifyContent': 'center', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '80vw', 'display': 'flex' }}>
