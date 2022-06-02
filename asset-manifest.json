@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/unobas_site/static/css/main.c33d1b90.css",
-    "main.js": "/unobas_site/static/js/main.57b301b1.js",
+    "main.js": "/unobas_site/static/js/main.ec56e1c4.js",
     "static/js/787.5cd1057d.chunk.js": "/unobas_site/static/js/787.5cd1057d.chunk.js",
     "index.html": "/unobas_site/index.html",
     "main.c33d1b90.css.map": "/unobas_site/static/css/main.c33d1b90.css.map",
-    "main.57b301b1.js.map": "/unobas_site/static/js/main.57b301b1.js.map",
+    "main.ec56e1c4.js.map": "/unobas_site/static/js/main.ec56e1c4.js.map",
     "787.5cd1057d.chunk.js.map": "/unobas_site/static/js/787.5cd1057d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c33d1b90.css",
-    "static/js/main.57b301b1.js"
+    "static/js/main.ec56e1c4.js"
   ]
 }
