@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div style={{ 'fontFamily': 'Segoe UI' }}>
-      <Parallax pages={3.3} ref={ref} style={{ top: '0', left: '0' }}>
+      <Parallax pages={3.4} ref={ref} style={{ top: '0', left: '0' }}>
         <ParallaxLayer
           offset={0.01}
           speed={0.1}
@@ -111,18 +111,18 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={1.0}
-          speed={1.5}
+          offset={1}
+          speed={0.5}
           factor={0.45}>
-            <div style={{'height': 'calc(30% + 12vw)'}}>
-              <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': 'calc(30% + 12vw)', 'width': '100vw', 'objectFit': 'fill'}}>
+            <div style={{'height': 'calc(30% + 11vw)'}}>
+              <video autoPlay muted loop src='/unobas_site/static/cards.mp4' style={{'zIndex': '-2', 'position': 'absolute', 'resize': 'both', 'height': 'calc(30% + 11vw)', 'width': '100vw', 'objectFit': 'fill'}}>
               </video>
-              <div style={{'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '50vw', 'minWidth': '325px', 'height': '100%'}}>
-                  <div style={{'marginTop': 'auto', 'marginBottom': 'auto'}}>
-                  <p style={{'color': 'orange', 'display': 'inline'}}>683</p> commits in total<br></br>
-                  <p style={{'color': '#00a2ff', 'display': 'inline'}}>93</p> 0-6am commits<br></br>
-                  Averaging <p style={{'color': 'green', 'display': 'inline'}}>8.1</p> commits per day<br></br>
-                  Over <p style={{'color': 'red', 'display': 'inline'}}>8000</p> lines of Java code
+              <div style={{'textAlign': 'center', 'fontSize': 'max(3vw, 20px)', 'fontWeight': 'bold', 'color': 'white', 'backgroundImage': 'url(/unobas_site/static/code.png)', 'backgroundRepeat': 'no-repeat', 'backgroundAttachment': 'fixed', 'backgroundSize': 'cover', 'marginLeft': 'auto', 'marginRight': 'auto', 'width': '45vw', 'minWidth': '325px', 'height': '100%'}}>
+                  <div style={{'alignContent': 'center', 'justifyContent': 'center', 'flexDirection': 'column'}}>
+                    <p style={{'color': 'orange', 'display': 'inline'}}>683</p> commits in total<br></br>
+                    <p style={{'color': '#00a2ff', 'display': 'inline'}}>93</p> 0-6am commits<br></br>
+                    Averaging <p style={{'color': 'green', 'display': 'inline'}}>8.1</p> commits per day<br></br>
+                    Over <p style={{'color': 'red', 'display': 'inline'}}>8000</p> lines of Java code
                   </div>
               </div>
             </div>
